@@ -5,6 +5,8 @@
 /*collection*/
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+/*Testimonials*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /*******/
 html{
     overflow-x: hidden;
@@ -56,15 +58,15 @@ ul{
     align-items: center;
     justify-content: space-around;
 }
-a{
+ul a{
 
     text-decoration: none;
-    color: rgb(255, 0, 0);
     border: 2px solid red;
     padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: red;
 }
 
 
@@ -143,7 +145,7 @@ a{
 .img-txt-left,.img-txt-right{
     position: absolute;
     top: 50%;
-    left: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 70px;
     font-family: 'Shizuru',sans-serif;
@@ -170,6 +172,29 @@ a{
 
 .testimonials{
     display: flex;
+    flex-direction: column;
+}
+.testimonials-header{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Montserrat';
+
+}
+.review-box{
+    margin: 10% 20%;
+    text-align: center;
+}
+.review-text{
+    color: rgb(94, 92, 92);
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+.review-location{
+    color: rgb(158, 158, 158);
+    font-size: 28px;
+    font-family: sans-serif;
 }
 
 .footer{
