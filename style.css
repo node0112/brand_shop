@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@350&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+/*collection*/
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
 /*******/
 html{
     overflow-x: hidden;
@@ -15,9 +17,11 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
 }
 
-.header{
+
+ .header{
     min-height: 60px;
     font-family: 'Roboto','Monaco';
     background-color: #000000;
@@ -65,6 +69,7 @@ a{
 
 
 
+
 .content{
     display: flex;
     flex-direction: column;
@@ -95,9 +100,6 @@ a{
     color: rgb(255, 255, 255);
 }
 
-
-
-
 .collection{
     display: flex;
     flex-direction: column;
@@ -110,36 +112,61 @@ a{
     text-align: center;
     margin-top: 0;
 }
-.collection-wrapper{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0;
-    text-align: center;
-
-}
-.sub-images{
-    max-width: 100%;
-    display: flex;
-    margin: 0;
-    align-items: stretch;
-}
-.product-card{
-    padding-bottom: 0;
-    text-align: center;
-}
-.product-image img{
-    filter: brightness(50%);
+.width-100{
     width: 100%;
 }
-.product-image{
-    display: inline;
+.images img{
+    filter: brightness(70%);
 }
-.prod-text{
+.images{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    margin: 0;
+}
+.images img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.sub-images{
+    display: flex;
+    margin-top: -4px;
+    align-items: stretch;
+    padding: 0;
+}
+.image-container{
+    position: relative;
+    text-align: center;
+}
+.img-txt-left,.img-txt-right{
+    position: absolute;
     top: 50%;
-    padding-bottom: 0;
-    color: rgb(241, 0, 0); 
-  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    font-family: 'Shizuru',sans-serif;
 }
+.img-txt-left{
+    color: rgb(183, 110, 27);
+}
+.img-txt-right{
+    color: turquoise;
+}
+.img-txt-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-size: 70px;
+    color: yellow;
+    font-family: 'Rock 3D';
+    padding: 0;
+}
+
+
 
 .testimonials{
     display: flex;
