@@ -197,6 +197,36 @@ ul a{
     font-family: sans-serif;
 }
 
+
+
+.newsletters{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: turquoise;
+    height: 150px;
+    align-items: center;
+
+}
+.newsletter-text{
+    color: tomato;
+    padding-right: 0;
+    font-size: 48px;
+    font-family: 'monaco';
+}
+button{
+    background-color: yellow;
+    color: rgb(90, 119, 30);
+    border-radius: 5px;
+    border-style: none;
+    font-size: 42px;
+    font-family: 'monaco';
+}
+
+
+
+
+
 .footer{
     margin-top: auto;
     font-family: sans-serif;
@@ -205,7 +235,8 @@ ul a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(178, 178, 178);
+    background-color: rgb(0, 0, 0);
     padding: 32px;
     margin: 0;
+    color: rgb(255, 255, 255);
 }
